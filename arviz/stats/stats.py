@@ -177,6 +177,7 @@ def compare(
     except Exception as e:
         raise e.__class__("Encountered error in ELPD computation of compare.") from e
     names = list(ics_dict.keys())
+    print(names)
     if ic == "loo":
         df_comp = pd.DataFrame(
             index=names,
